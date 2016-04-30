@@ -30,7 +30,7 @@ In your `config/app.php` add `'Cagartner\CorreiosConsulta\ServiceProvider'` to t
     'Illuminate\Foundation\Providers\ArtisanServiceProvider',
     'Illuminate\Auth\AuthServiceProvider',
     // ...
-    'Cagartner\CorreiosConsulta\ServiceProvider',
+    Cagartner\CorreiosConsulta\ServiceProvider::class,
 
 ],
 ```
@@ -43,7 +43,7 @@ Then at the end of `config/app.php` add `'Correios'    => 'Cagartner\CorreiosCon
     'App'        => 'Illuminate\Support\Facades\App',
     'Artisan'    => 'Illuminate\Support\Facades\Artisan',
     // ...
-    'Correios'    => 'Cagartner\CorreiosConsulta\Facade',
+    'Correios'    => Cagartner\CorreiosConsulta\Facade::class,
 
 ],
 ```
